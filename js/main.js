@@ -3,7 +3,14 @@ import { CHECKOUT, PRIVACY_URL } from "./config.js";
 const privacy = document.querySelector("#privacy");
 if (privacy) privacy.href = PRIVACY_URL;
 
-const revealItems = document.querySelectorAll(".reveal, .reasons article, .price-grid article, .float");
+const nav = document.querySelector(".nav");
+if (nav) {
+  const markNav = () => nav.classList.toggle("is-stuck", window.scrollY > 12);
+  markNav();
+  window.addEventListener("scroll", markNav, { passive: true });
+}
+
+const revealItems = document.querySelectorAll(".reveal, .reasons article, .price-grid article, .float, .block > .chip, .block > h2, .block > .sub");
 const motion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 document.documentElement.classList.add("js-motion");
 if (motion) {
