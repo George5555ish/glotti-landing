@@ -407,6 +407,10 @@ h2 {
 .plans { padding-bottom: 64px; }
 
 .price-grid { grid-template-columns: repeat(4, 1fr); }
+.price-grid.single {
+  grid-template-columns: minmax(240px, 340px);
+  justify-content: center;
+}
 .price-grid article:first-child {
   background: rgba(255, 255, 255, 0.42);
   border: 1px solid rgba(255, 255, 255, 0.78);
