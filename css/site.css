@@ -131,6 +131,27 @@ a { color: inherit; text-decoration: none; }
 
 .pill { white-space: nowrap; }
 .pill.dark { background: #17181d; color: #fff; }
+.pill.chrome {
+  gap: 8px;
+  padding: 8px 16px 8px 10px;
+  background: #1a73e8;
+  color: #fff;
+  border: 0;
+  box-shadow: 0 8px 18px rgba(26, 115, 232, 0.28);
+}
+.pill.chrome:hover { background: #1967d2; }
+a.chrome::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  flex: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23EA4335' d='M24 24 L24 4 A20 20 0 0 1 41.32 34 Z'/%3E%3Cpath fill='%2334A853' d='M24 24 L41.32 34 A20 20 0 0 1 6.68 34 Z'/%3E%3Cpath fill='%23FBBC04' d='M24 24 L6.68 34 A20 20 0 0 1 24 4 Z'/%3E%3Ccircle cx='24' cy='24' r='9' fill='%23fff'/%3E%3Ccircle cx='24' cy='24' r='6.5' fill='%234285F4'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+a.chrome:not(.pill) {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
 .pill.light {
   background: rgba(255, 255, 255, 0.72);
   color: var(--ink);
