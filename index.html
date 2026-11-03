@@ -15,56 +15,66 @@
           <img src="assets/icon128.png" width="28" height="28" alt="" />
         </a>
         <nav>
-          <a href="#how">How it works</a>
-          <a href="#why">Why Glotti</a>
-          <a href="#soon">Coming soon</a>
-          <a href="#plans">Pricing</a>
+          <a href="#how" data-i18n="nav_how">How it works</a>
+          <a href="#why" data-i18n="nav_why">Why Glotti</a>
+          <a href="#soon" data-i18n="nav_soon">Coming soon</a>
+          <a href="#plans" data-i18n="nav_plans">Pricing</a>
         </nav>
-        <a class="pill dark" href="#plans">Get hours</a>
+        <div class="nav-end">
+          <label class="lang-picker">
+            <span class="visually-hidden" data-i18n="site_language">Language</span>
+            <select id="site-lang"></select>
+          </label>
+          <a class="pill light" href="#plans" data-i18n="get_hours">Get hours</a>
+          <a class="pill dark" href="https://chromewebstore.google.com/detail/glotti-translate-youtube/hjpdkdjhmjaciigobdjgdfdmeghngjia" target="_blank" rel="noopener noreferrer" data-i18n="add_chrome">Add to Chrome</a>
+        </div>
       </header>
 
       <section class="hero" id="top">
-        <a class="badge" href="#plans">20 free minutes a day</a>
-        <h1>Turn a <span class="accent">YouTube live</span> into captions you can read.</h1>
+        <a class="badge" href="#plans" data-i18n="badge">20 free minutes a day</a>
+        <h1 data-i18n-html="hero_title">Turn a <span class="accent">YouTube live</span> into captions you can read.</h1>
         <div class="cta-row">
-          <p class="lang-chip">English <span class="arrow">→</span> <span class="lang-cycle" data-lang="name">Spanish</span></p>
-          <a class="pill dark" href="#plans">Get hours</a>
+          <p class="lang-chip"><span data-i18n="hero_from">English</span> <span class="arrow">→</span> <span class="lang-cycle" data-lang="name">Spanish</span></p>
+          <a class="pill light" href="#plans" data-i18n="get_hours">Get hours</a>
+          <a class="pill dark" href="https://chromewebstore.google.com/detail/glotti-translate-youtube/hjpdkdjhmjaciigobdjgdfdmeghngjia" target="_blank" rel="noopener noreferrer" data-i18n="add_chrome">Add to Chrome</a>
         </div>
         <figure class="stage reveal">
-          <img src="assets/live-captions.png" alt="Glotti captions on a YouTube live stream, with the language bar in the corner of the player." />
+          <img src="assets/live-captions.png" alt="Glotti captions on a YouTube live stream, with the language bar in the corner of the player." data-i18n-alt="hero_img_alt" />
         </figure>
       </section>
 
       <section class="languages reveal" aria-label="Caption languages">
-        <span>English</span>
-        <span>Spanish</span>
-        <span>French</span>
-        <span>German</span>
-        <span>Portuguese</span>
-        <span>Japanese</span>
-        <span>Korean</span>
-        <span>Chinese</span>
+        <span data-lang-code="en">English</span>
+        <span data-lang-code="es">Spanish</span>
+        <span data-lang-code="ro">Romanian</span>
+        <span data-lang-code="fr">French</span>
+        <span data-lang-code="de">German</span>
+        <span data-lang-code="pt">Portuguese</span>
+        <span data-lang-code="ja">Japanese</span>
+        <span data-lang-code="ko">Korean</span>
+        <span data-lang-code="zh">Chinese</span>
+        <span data-lang-code="vi">Vietnamese</span>
       </section>
 
       <section class="block" id="how">
-        <p class="chip">How it works</p>
-        <h2>How <span class="accent">Glotti</span> works</h2>
-        <p class="sub">Three steps. Open a YouTube live stream, choose the languages, then read the line.</p>
+        <p class="chip" data-i18n="how_chip">How it works</p>
+        <h2 data-i18n-html="how_title">How <span class="accent">Glotti</span> works</h2>
+        <p class="sub" data-i18n="how_sub">Three steps. Open a YouTube live stream, choose the languages, then read the line.</p>
         <ol class="steps">
           <li class="reveal">
             <div class="step-head">
               <span class="step-no">1</span>
-              <h3>Open a YouTube live</h3>
+              <h3 data-i18n="step1_title">Open a YouTube live</h3>
             </div>
-            <p>Turn captions on during a live stream. A normal video is left alone.</p>
-            <img class="popup-shot" src="assets/popup.png" alt="The Glotti popup with captions switched on during a live stream." />
+            <p data-i18n="step1_body">Turn captions on during a live stream. A normal video is left alone.</p>
+            <img class="popup-shot" src="assets/popup.png" alt="The Glotti popup with captions switched on during a live stream." data-i18n-alt="popup_img_alt" />
           </li>
           <li class="reveal">
             <div class="step-head">
               <span class="step-no">2</span>
-              <h3>Pick both languages</h3>
+              <h3 data-i18n="step2_title">Pick both languages</h3>
             </div>
-            <p>Source is what you hear. Target is what you read.</p>
+            <p data-i18n="step2_body">Source is what you hear. Target is what you read.</p>
             <div class="step-lang" aria-hidden="true">
               <span>EN</span>
               <span class="arrow">→</span>
@@ -74,92 +84,96 @@
           <li class="reveal">
             <div class="step-head">
               <span class="step-no">3</span>
-              <h3>Read it on the video</h3>
+              <h3 data-i18n="step3_title">Read it on the video</h3>
             </div>
-            <p>The line shows on the player, a few seconds behind the speaker.</p>
-            <img class="player-shot" src="assets/live-captions.png" alt="A caption line written across a YouTube live player." />
+            <p data-i18n="step3_body">The line shows on the player, a few seconds behind the speaker.</p>
+            <img class="player-shot" src="assets/live-captions.png" alt="A caption line written across a YouTube live player." data-i18n-alt="player_img_alt" />
           </li>
         </ol>
       </section>
 
       <section class="block" id="why">
-        <p class="chip">On the video</p>
-        <h2>Why the <span class="accent">captions</span> stay with the stream</h2>
+        <p class="chip" data-i18n="why_chip">On the video</p>
+        <h2 data-i18n-html="why_title">Why the <span class="accent">captions</span> stay with the stream</h2>
         <div class="reasons">
           <article>
             <span class="icon" aria-hidden="true">▶</span>
-            <h3>Live streams</h3>
-            <p>Turn it on during a YouTube live. A normal video is left alone.</p>
+            <h3 data-i18n="why1_title">Live streams</h3>
+            <p data-i18n="why1_body">Turn it on during a YouTube live. A normal video is left alone.</p>
           </article>
           <article>
             <span class="icon" aria-hidden="true">Aa</span>
-            <h3>Two languages</h3>
-            <p>Pick the language being spoken and the language you want to read.</p>
+            <h3 data-i18n="why2_title">Two languages</h3>
+            <p data-i18n="why2_body">Pick the language being spoken and the language you want to read.</p>
           </article>
           <article>
             <span class="icon" aria-hidden="true">Hr</span>
-            <h3>Hours you can see</h3>
-            <p>Free minutes, then a 12-hour pack. The license key keeps those hours.</p>
+            <h3 data-i18n="why3_title">Hours you can see</h3>
+            <p data-i18n="why3_body">Free minutes, then a 12-hour pack. The license key keeps those hours.</p>
           </article>
         </div>
       </section>
 
       <section class="block" id="soon">
-        <p class="chip">Coming soon</p>
-        <h2>More ways to follow the <span class="accent">sound</span></h2>
-        <p class="sub">Live captions are here. These are still being built.</p>
+        <p class="chip" data-i18n="soon_chip">Coming soon</p>
+        <h2 data-i18n-html="soon_title">More ways to follow the <span class="accent">sound</span></h2>
+        <p class="sub" data-i18n="soon_sub">Live captions are here. These are still being built.</p>
         <div class="soon-grid">
           <article class="reveal">
-            <p class="soon-tag">Coming soon</p>
-            <h3>Live audio dubbing</h3>
-            <p>Hear the stream spoken in another language while it is still live.</p>
+            <p class="soon-tag" data-i18n="soon_tag">Coming soon</p>
+            <h3 data-i18n="soon1_title">Live audio dubbing</h3>
+            <p data-i18n="soon1_body">Hear the stream spoken in another language while it is still live.</p>
           </article>
           <article class="reveal">
-            <p class="soon-tag">Coming soon</p>
-            <h3>Recorded captions</h3>
-            <p>Lines on a video that has already finished, not only a live stream.</p>
+            <p class="soon-tag" data-i18n="soon_tag">Coming soon</p>
+            <h3 data-i18n="soon2_title">Recorded captions</h3>
+            <p data-i18n="soon2_body">Lines on a video that has already finished, not only a live stream.</p>
           </article>
           <article class="reveal">
-            <p class="soon-tag">Coming soon</p>
-            <h3>Recorded voice dubbing</h3>
-            <p>A spoken track in your language for audio that is already recorded.</p>
+            <p class="soon-tag" data-i18n="soon_tag">Coming soon</p>
+            <h3 data-i18n="soon3_title">Recorded voice dubbing</h3>
+            <p data-i18n="soon3_body">A spoken track in your language for audio that is already recorded.</p>
           </article>
         </div>
       </section>
 
       <section class="block plans" id="plans">
-        <p class="chip">Pricing</p>
-        <h2>Hours for the way you <span class="accent-warm">watch</span></h2>
-        <p class="sub">Free is <span class="accent-warm">20 minutes</span> a day. When that runs out, buy 12 more hours.</p>
+        <p class="chip" data-i18n="plans_chip">Pricing</p>
+        <h2 data-i18n-html="plans_title">Hours for the way you <span class="accent-warm">watch</span></h2>
+        <p class="sub" data-i18n-html="plans_sub">Free is <span class="accent-warm">20 minutes</span> a day. When that runs out, buy 12 more hours.</p>
         <div class="price-grid single">
           <article>
-            <h3>12 hours</h3>
+            <h3 data-i18n="pack_title">12 hours</h3>
             <p class="price">£8</p>
-            <p>Lasts 12 months. One key, one browser at a time.</p>
-            <a class="pill dark" data-plan="packS" href="#plans">Buy 12 hours</a>
+            <p data-i18n="pack_body">Lasts 12 months. One key, one browser at a time.</p>
+            <a class="pill dark" data-plan="packS" href="#plans" data-i18n="buy_hours">Buy 12 hours</a>
           </article>
         </div>
       </section>
 
       <section class="closer">
-        <article class="float note one">Paste the key from your email.</article>
-        <article class="float note two">12 hours · £8</article>
+        <article class="float note one" data-i18n="paste_key">Paste the key from your email.</article>
+        <article class="float note two" data-i18n="hours_price">12 hours · £8</article>
         <div class="closer-card">
           <img src="assets/icon128.png" width="48" height="48" alt="" />
-          <h2>Your stream, <span class="accent">your language.</span></h2>
-          <a class="pill dark" href="#plans">Get hours</a>
+          <h2 data-i18n-html="closer_title">Your stream, <span class="accent">your language.</span></h2>
+          <div class="closer-actions">
+            <a class="pill dark" href="https://chromewebstore.google.com/detail/glotti-translate-youtube/hjpdkdjhmjaciigobdjgdfdmeghngjia" target="_blank" rel="noopener noreferrer" data-i18n="add_chrome">Add to Chrome</a>
+            <a class="pill light" href="#plans" data-i18n="get_hours">Get hours</a>
+          </div>
         </div>
-        <article class="float note three">4:32 left</article>
+        <article class="float note three" data-i18n="time_left">4:32 left</article>
         <article class="float note four">EN → <span class="lang-cycle" data-lang="code" aria-hidden="true">ES</span></article>
       </section>
 
       <footer>
         <nav>
-          <a href="#how">How it works</a>
-          <a href="#why">Why Glotti</a>
-          <a href="#soon">Coming soon</a>
-          <a href="#plans">Pricing</a>
-          <a id="privacy" href="https://langtube-proxy.mbajiakugeorge.workers.dev/privacy">Privacy</a>
+          <a href="#how" data-i18n="nav_how">How it works</a>
+          <a href="#why" data-i18n="nav_why">Why Glotti</a>
+          <a href="#soon" data-i18n="nav_soon">Coming soon</a>
+          <a href="#plans" data-i18n="nav_plans">Pricing</a>
+          <a href="https://chromewebstore.google.com/detail/glotti-translate-youtube/hjpdkdjhmjaciigobdjgdfdmeghngjia" target="_blank" rel="noopener noreferrer" data-i18n="add_chrome">Add to Chrome</a>
+          <a id="privacy" href="https://langtube-proxy.mbajiakugeorge.workers.dev/privacy" data-i18n="privacy">Privacy</a>
         </nav>
         <p class="wordmark">Glotti</p>
       </footer>
