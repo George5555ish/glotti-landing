@@ -390,6 +390,7 @@ h2 {
   margin: 12px auto 0;
   color: var(--muted);
 }
+.plans-end { max-width: 40em; }
 
 .reasons, .price-grid {
   display: grid;
